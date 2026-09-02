@@ -259,7 +259,9 @@ export function WebsiteEditor({ client, onExit }: { client: SupabaseClient; onEx
   const previewStyle = useMemo(() => ({
     width: device === "mobile" ? 390 : device === "tablet" ? 768 : "100%",
   }), [device]);
-  const liveWebsiteUrl = `${window.location.protocol}//${window.location.hostname}:3000${page?.route_path ?? "/"}`;
+  const configuredWebsiteUrl = (import.meta.env.VITE_WEBSITE_URL as string | undefined)?.replace(/\/$/, "");
+  const localWebsiteUrl = `${window.location.protocol}//${window.location.hostname}:3000`;
+  const liveWebsiteUrl = `${configuredWebsiteUrl || localWebsiteUrl}${page?.route_path ?? "/"}`;
 
   function startEditing() {
     if (window.innerWidth < 1024) {
