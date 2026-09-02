@@ -1,4 +1,4 @@
-import { getProducts, getPublishedPageByPath, money, orderUrl } from "@/lib/content";
+import { getProducts, getPublishedPageByPath, orderUrl } from "@/lib/content";
 import { PublishedPage } from "@/components/PublishedPage";
 
 export const metadata = {
@@ -33,7 +33,6 @@ export default async function MenuPage() {
         <div className="menu-grid">
           {items.map((item) => <article key={item.id}>
             <div><img src={item.image} alt={item.name} /></div>
-            <span>{money(item.priceCents)}</span>
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <a href={orderUrl}>Order this drink</a>
