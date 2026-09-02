@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root { font-family:'DM Sans',sans-serif; color:#132050; background:#f3f0e8; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; min-width:320px; min-height:100vh; background:#f3f0e8; }
+button { font:inherit; }
+button, a { -webkit-tap-highlight-color:transparent; }
+button:focus-visible { outline:3px solid #e7b827; outline-offset:3px; }
+::selection { color:#fff; background:#24317d; }
+::-webkit-scrollbar { width:10px; }
+::-webkit-scrollbar-track { background:#ece7da; }
+::-webkit-scrollbar-thumb { background:#24317d; border:3px solid #ece7da; border-radius:10px; }

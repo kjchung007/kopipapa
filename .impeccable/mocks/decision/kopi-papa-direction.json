@@ -1,0 +1,105 @@
+{
+  "title": "Choose Kopi Papa's ordering world",
+  "question": "Each direction keeps ordering fast and clear. Choose the visual system that should make Kopi Papa recognisable.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Pickup Departure Board",
+      "kicker": "THE ROLL",
+      "lineage": "neighbourhood transit departure boards",
+      "thesis": "Ordering feels like catching the next perfectly timed pickup.",
+      "palette": ["#171915", "#f4e7c7", "#d84b32", "#34705d"],
+      "materials": ["enamel signage", "mechanical destination cells", "warm paper tickets"],
+      "viewport": "The selected shop and live pickup estimate form one bold departure strip above a fast photographic menu.",
+      "risk": "Could feel too utilitarian unless food photography and warm ticket details keep it hospitable.",
+      "raised": [
+        {"from": "Coffee Ledger", "raise": "Prices, modifiers, and totals inherit ledger-grade alignment and precision."},
+        {"from": "Depot Blind", "raise": "Order-state changes gain one memorable mechanical step-and-settle motion."}
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "Kopitiam Order Chit",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "hand-marked kopitiam order slips and counter dockets",
+      "thesis": "The familiar order chit becomes a precise, modern mobile ritual.",
+      "palette": ["#f6edda", "#252019", "#c84b31", "#2f6758"],
+      "materials": ["uncoated receipt paper", "rubber stamps", "pencil rules"],
+      "viewport": "A warm paper surface leads with shop and wait time, then neatly ruled category tabs and generous drink photography.",
+      "risk": "This is the most culturally resonant option, but it becomes nostalgic if the typography or motion feels theatrical.",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "challenger-airport",
+      "label": "Counter Wayfinding",
+      "verdict": "competitive",
+      "lineage": "international airport wayfinding",
+      "thesis": "Every ordering decision is signed like the next clear turn through a terminal.",
+      "palette": ["#f4c900", "#121212", "#ffffff", "#e8e5dc"],
+      "materials": ["saturated sign panels", "black inset pictograms", "distance markers"],
+      "viewport": "A monumental pickup sign names the shop and wait, while categories become a chain of obvious next decisions.",
+      "case": "Excellent product clarity and accessibility; slightly weaker connection to a neighbourhood coffee ritual.",
+      "risk": "Yellow wayfinding can dominate the drinks unless carefully confined to decisions and status.",
+      "comp": ".impeccable/mocks/decision/challenger-airport.png",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-terminal-yellow-wayfinding-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-terminal-yellow-wayfinding.webp"
+    },
+    {
+      "id": "challenger-seven-segment",
+      "label": "Ready Number Display",
+      "verdict": "competitive",
+      "lineage": "seven-segment clocks and pickup number displays",
+      "thesis": "Availability, wait time, price, and order number glow with absolute certainty.",
+      "palette": ["#141411", "#ff6b35", "#f0e4cc", "#546b4b"],
+      "materials": ["matte instrument panels", "lit segment masks", "ghost cells"],
+      "viewport": "A calm cream menu is punctuated by one dark instrument strip showing the next pickup and live wait time.",
+      "case": "Strong for operational status and repeat use; less expressive for browsing twenty distinctive drinks.",
+      "risk": "Too much display language would make the menu feel like equipment rather than hospitality.",
+      "comp": ".impeccable/mocks/decision/challenger-seven-segment.png",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock.webp"
+    },
+    {
+      "id": "challenger-ledger",
+      "label": "Coffee Ledger",
+      "verdict": "declined",
+      "lineage": "reference-setting and ruled account books",
+      "thesis": "The menu reads as a beautifully indexed coffee reference.",
+      "palette": ["#efe5cf", "#1d1b18", "#a63c2f"],
+      "materials": ["hairline ruling", "unbleached paper", "rubric marks"],
+      "viewport": "A compact menu index surrounds one fixed category rail with exact price and modifier notation.",
+      "case": "Precise but too reading-heavy for hurried, one-handed ordering.",
+      "kept": "Its disciplined alignment raises every price, modifier, and total in the selected direction.",
+      "risk": "Dense editorial measures would slow scanning on small phones.",
+      "hero": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting-hero.webp"
+    },
+    {
+      "id": "challenger-depot",
+      "label": "Depot Blind",
+      "verdict": "declined",
+      "lineage": "cloth destination blinds",
+      "thesis": "Order states advance as tactile destination courses.",
+      "palette": ["#194b3d", "#f0bd27", "#efe4ca"],
+      "materials": ["dyed duck cloth", "stitched controls", "backlit weave"],
+      "viewport": "The live order destination occupies one fixed window above a pared-back menu.",
+      "case": "Memorable status motion, but the cloth system is too narrow to carry product browsing alone.",
+      "kept": "Its one-course mechanical step becomes the signature order-status transition.",
+      "risk": "Literal fabric treatments could obscure product imagery and accessibility.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-depot-blind-courses-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "comp", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "Polished ordering standard",
+    "thesis": "A familiar modern coffee menu executed with exceptional clarity.",
+    "palette": ["#ffffff", "#1f2937", "#b45309", "#f3f4f6"],
+    "materials": ["clean grid", "rounded controls", "product photography"],
+    "viewport": "Pickup selector, store row, promotion, category rail, product cards, and persistent cart follow the expected ordering pattern.",
+    "risk": "Immediately usable, but deliberately difficult to distinguish from established competitors.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

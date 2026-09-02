@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T18:00:00+08:00",
+  "title": "Design System: Kopi Papa",
+  "extensions": {
+    "colorMeta": {
+      "counter-navy": { "role": "primary", "displayName": "Counter Navy", "canonical": "#202978", "tonalRamp": ["oklch(15% 0.07 272)", "oklch(25% 0.10 272)", "oklch(35% 0.12 272)", "oklch(45% 0.11 272)", "oklch(58% 0.09 272)", "oklch(70% 0.06 272)", "oklch(84% 0.03 272)", "oklch(95% 0.01 272)"] },
+      "counter-navy-deep": { "role": "primary", "displayName": "Deep Counter Navy", "canonical": "#111c53", "tonalRamp": ["oklch(15% 0.06 272)", "oklch(24% 0.08 272)", "oklch(34% 0.09 272)", "oklch(45% 0.08 272)", "oklch(58% 0.06 272)", "oklch(70% 0.04 272)", "oklch(84% 0.02 272)", "oklch(95% 0.01 272)"] },
+      "signal-gold": { "role": "secondary", "displayName": "Signal Gold", "canonical": "#e7b827", "tonalRamp": ["oklch(15% 0.05 87)", "oklch(27% 0.08 87)", "oklch(40% 0.11 87)", "oklch(54% 0.14 87)", "oklch(68% 0.15 87)", "oklch(78% 0.13 87)", "oklch(88% 0.08 87)", "oklch(95% 0.04 87)"] },
+      "price-gold": { "role": "secondary", "displayName": "Price Gold", "canonical": "#b28a35", "tonalRamp": ["oklch(15% 0.04 82)", "oklch(27% 0.06 82)", "oklch(40% 0.08 82)", "oklch(54% 0.10 82)", "oklch(68% 0.09 82)", "oklch(78% 0.07 82)", "oklch(88% 0.04 82)", "oklch(95% 0.02 82)"] },
+      "admin-gold-ink": { "role": "secondary", "displayName": "Admin Gold Ink", "canonical": "#a57d20", "tonalRamp": ["oklch(15% 0.04 82)", "oklch(27% 0.06 82)", "oklch(40% 0.08 82)", "oklch(54% 0.10 82)", "oklch(68% 0.09 82)", "oklch(78% 0.07 82)", "oklch(88% 0.04 82)", "oklch(95% 0.02 82)"] },
+      "warm-cream": { "role": "neutral", "displayName": "Warm Cream", "canonical": "#f7f2e6", "tonalRamp": ["oklch(15% 0.01 85)", "oklch(28% 0.012 85)", "oklch(42% 0.014 85)", "oklch(56% 0.016 85)", "oklch(70% 0.018 85)", "oklch(82% 0.02 85)", "oklch(91% 0.022 85)", "oklch(96% 0.024 85)"] },
+      "canvas-cream": { "role": "neutral", "displayName": "Canvas Cream", "canonical": "#f3f0e8", "tonalRamp": ["oklch(15% 0.008 85)", "oklch(28% 0.01 85)", "oklch(42% 0.012 85)", "oklch(56% 0.014 85)", "oklch(70% 0.016 85)", "oklch(82% 0.018 85)", "oklch(91% 0.02 85)", "oklch(95% 0.02 85)"] },
+      "counter-white": { "role": "neutral", "displayName": "Counter White", "canonical": "#ffffff", "tonalRamp": ["#262626", "#424242", "#606060", "#808080", "#a2a2a2", "#c5c5c5", "#e5e5e5", "#ffffff"] },
+      "ink-navy": { "role": "neutral", "displayName": "Ink Navy", "canonical": "#101a49", "tonalRamp": ["oklch(15% 0.05 272)", "oklch(25% 0.07 272)", "oklch(36% 0.07 272)", "oklch(48% 0.06 272)", "oklch(61% 0.05 272)", "oklch(73% 0.03 272)", "oklch(86% 0.02 272)", "oklch(95% 0.01 272)"] },
+      "quiet-ink": { "role": "neutral", "displayName": "Quiet Ink", "canonical": "#666b80", "tonalRamp": ["oklch(15% 0.015 272)", "oklch(28% 0.02 272)", "oklch(41% 0.025 272)", "oklch(54% 0.025 272)", "oklch(67% 0.02 272)", "oklch(79% 0.015 272)", "oklch(89% 0.01 272)", "oklch(95% 0.006 272)"] },
+      "warm-line": { "role": "neutral", "displayName": "Warm Line", "canonical": "#e1dacb", "tonalRamp": ["oklch(15% 0.01 78)", "oklch(28% 0.012 78)", "oklch(42% 0.014 78)", "oklch(56% 0.016 78)", "oklch(70% 0.018 78)", "oklch(82% 0.02 78)", "oklch(89% 0.022 78)", "oklch(95% 0.024 78)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Brand Display", "purpose": "Customization titles and strongest brand-led headings." },
+      "admin-hero": { "displayName": "Admin Login Hero", "purpose": "The split-screen admin login thesis only." },
+      "headline": { "displayName": "Menu Headline", "purpose": "Menu sections and campaign statements." },
+      "body": { "displayName": "Operational Body", "purpose": "Descriptions and explanatory copy." },
+      "label": { "displayName": "Compact Label", "purpose": "Metadata, prices, status, and control labels." }
+    },
+    "shadows": [
+      { "name": "shell", "value": "0 16px 48px rgba(15,24,67,.14)", "purpose": "Frames the centered app shell on wide screens." },
+      { "name": "raised-panel", "value": "0 12px 26px rgba(17,28,83,.16)", "purpose": "Separates campaign panels from the page." },
+      { "name": "campaign", "value": "0 15px 30px rgba(17,28,83,.17)", "purpose": "Raises the photographic Home carousel." },
+      { "name": "choice-lift", "value": "0 8px 22px rgba(17,28,83,.1)", "purpose": "Lifts fulfillment choices across the welcome boundary." },
+      { "name": "floating-cart", "value": "0 14px 30px rgba(17,28,83,.25)", "purpose": "Elevates the actionable cart bar." },
+      { "name": "sheet", "value": "0 -20px 50px rgba(7,12,42,.28)", "purpose": "Anchors the customization sheet above its veil." }
+      ,{ "name": "admin-editor", "value": "0 22px 60px rgba(7,12,42,.3)", "purpose": "Isolates the menu editor above its navy veil." }
+    ],
+    "motion": [
+      { "name": "quick-state", "value": "200ms ease-out", "purpose": "Hover and compact control feedback." },
+      { "name": "image-zoom", "value": "350ms cubic-bezier(.2,.8,.2,1)", "purpose": "Restrained zoom on product photography." },
+      { "name": "sheet-arrive", "value": "350ms cubic-bezier(.2,.8,.2,1)", "purpose": "Bottom-sheet entrance." }
+    ],
+    "breakpoints": [
+      { "name": "narrow", "value": "380px" },
+      { "name": "expanded", "value": "700px" },
+      { "name": "counter", "value": "1000px" }
+      ,{ "name": "admin-mobile", "value": "700px" }
+      ,{ "name": "admin-rail-collapse", "value": "1000px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The decisive full-width action used to add or review an order.",
+      "html": "<button class=\"ds-btn-primary\"><span>Add to cart</span><strong>S$6.50</strong></button>",
+      "css": ".ds-btn-primary{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:54px;padding:0 18px;color:#fff;background:#202978;border:0;border-radius:14px;font:700 14px 'DM Sans',Arial,sans-serif;cursor:pointer;transition:background .2s ease-out}.ds-btn-primary strong{color:#e7b827}.ds-btn-primary:hover{background:#111c53}.ds-btn-primary:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Circular Add Button",
+      "kind": "button",
+      "description": "A compact one-tap add action for product rows.",
+      "html": "<button class=\"ds-add\" aria-label=\"Add item\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg></button>",
+      "css": ".ds-add{display:grid;place-items:center;width:34px;height:34px;color:#e7b827;background:#202978;border:0;border-radius:50%;cursor:pointer;transition:transform .2s ease-out,background .2s}.ds-add:hover{transform:translateY(-2px);background:#111c53}.ds-add:active{transform:translateY(0)}.ds-add:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Selected Choice",
+      "kind": "chip",
+      "refersTo": "chip-selected",
+      "description": "The selected state for temperature and size choices.",
+      "html": "<button class=\"ds-choice\">Iced</button>",
+      "css": ".ds-choice{min-width:132px;min-height:44px;padding:0 16px;color:#fff;background:#202978;border:1px solid #202978;border-radius:12px;box-shadow:inset 0 -2px 0 #e7b827;font:600 14px 'DM Sans',Arial,sans-serif;cursor:pointer}.ds-choice:hover{background:#111c53}.ds-choice:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Campaign Carousel",
+      "kind": "card",
+      "refersTo": "card-campaign",
+      "description": "The Home story surface: photographic, brand-led, but subordinate to ordering.",
+      "html": "<section class=\"ds-campaign\"><small>Prototype story</small><h2>Your kopi, your rhythm.</h2><p>Pickup ordering made comfortably quick.</p><button>Browse menu</button><span class=\"ds-page\"></span></section>",
+      "css": ".ds-campaign{position:relative;overflow:hidden;max-width:420px;min-height:280px;padding:38px 24px 70px;color:#fff;background:linear-gradient(90deg,rgba(10,18,59,.94),rgba(10,18,59,.35)),linear-gradient(145deg,#8a5835,#202978);border-radius:18px;box-shadow:0 15px 30px rgba(17,28,83,.17);font-family:'DM Sans',Arial,sans-serif}.ds-campaign small{color:#e7b827;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.ds-campaign h2{max-width:290px;margin:10px 0 8px;font:400 31px/1.05 'Bree Serif',Georgia,serif}.ds-campaign p{max-width:290px;margin:0 0 20px;font-size:12px;line-height:1.5}.ds-campaign button{min-height:42px;padding:0 18px;color:#202978;background:#e7b827;border:0;border-radius:10px;font-weight:800;cursor:pointer}.ds-campaign button:hover{background:#f1cf55}.ds-campaign button:focus-visible{outline:3px solid #fff;outline-offset:3px}.ds-page{position:absolute;right:18px;bottom:24px;width:18px;height:6px;background:#e7b827;border-radius:6px}"
+    },
+    {
+      "name": "Category Navigation Item",
+      "kind": "nav",
+      "description": "The active item in the persistent vertical menu rail.",
+      "html": "<button class=\"ds-category\"><span class=\"ds-category-symbol\">K</span><span>Kopi Classics</span></button>",
+      "css": ".ds-category{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:112px;min-height:88px;padding:9px 7px;color:#202978;background:#fff;border:0;border-bottom:1px solid #e8e2d6;font:700 11px/1.15 'DM Sans',Arial,sans-serif;cursor:pointer}.ds-category:before{content:'';position:absolute;inset:0 auto 0 0;width:3px;background:#e7b827}.ds-category-symbol{display:grid;place-items:center;width:32px;height:32px;color:#e7b827;background:#202978;border:1px solid #202978;border-radius:50%;font:400 13px 'Bree Serif',Georgia,serif}.ds-category:hover{background:#f7f2e6}.ds-category:focus-visible{outline:3px solid #e7b827;outline-offset:-3px}"
+    },
+    {
+      "name": "Product Row",
+      "kind": "custom",
+      "description": "The signature photographic, divider-led quick-order row.",
+      "html": "<article class=\"ds-product\"><div class=\"ds-product-photo\"></div><div><strong class=\"ds-product-name\">Gula Melaka Latte</strong><p>Espresso, fresh milk and smoky palm sugar.</p><span class=\"ds-product-price\">S$6.50</span></div></article>",
+      "css": ".ds-product{display:grid;grid-template-columns:108px minmax(0,1fr);gap:13px;width:330px;padding:13px 0;color:#101a49;background:#fff;border-bottom:1px solid #eee9df;font-family:'DM Sans',Arial,sans-serif}.ds-product-photo{width:108px;height:116px;background:linear-gradient(145deg,#e8d5ac,#6b3a19 52%,#b7763b);border-radius:14px}.ds-product-name{display:block;padding-top:2px;font-size:14px;line-height:1.2}.ds-product p{margin:7px 0 9px;color:#666b80;font-size:11px;line-height:1.4}.ds-product-price{color:#b28a35;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Live Wait Strip",
+      "kind": "custom",
+      "description": "A compact service-status strip connecting the selected shop to pickup timing.",
+      "html": "<div class=\"ds-wait\"><span class=\"ds-pulse\"></span><span>Now brewing</span><strong>About 8 min</strong><small>Estimated pickup</small></div>",
+      "css": ".ds-wait{display:grid;grid-template-columns:auto auto 1fr auto;align-items:center;gap:8px;min-height:38px;padding:0 18px;color:#fff;background:#111c53;font:400 12px 'DM Sans',Arial,sans-serif}.ds-wait strong{color:#e7b827;font-variant-numeric:tabular-nums}.ds-wait small{color:#cbd0eb;font-size:10px}.ds-pulse{width:7px;height:7px;border-radius:50%;background:#e7b827;box-shadow:0 3px 10px rgba(231,184,39,.5)}"
+    },
+    {
+      "name": "Fulfillment Choice",
+      "kind": "card",
+      "refersTo": "fulfillment-active",
+      "description": "The selected Pickup card that unlocks Menu browsing.",
+      "html": "<button class=\"ds-fulfillment\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M6 8h12l-1 12H7L6 8Z\"/><path d=\"M9 8V6a3 3 0 0 1 6 0v2\"/></svg><span><strong>Pickup</strong><small>Ready in about 8 min</small></span></button>",
+      "css": ".ds-fulfillment{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;min-width:190px;min-height:80px;padding:14px;color:#fff;text-align:left;background:#202978;border:1px solid #202978;border-radius:14px;box-shadow:0 8px 22px rgba(17,28,83,.1);font-family:'DM Sans',Arial,sans-serif;cursor:pointer}.ds-fulfillment svg{color:#e7b827}.ds-fulfillment strong,.ds-fulfillment small{display:block}.ds-fulfillment strong{font-size:14px}.ds-fulfillment small{margin-top:3px;color:#d9dcf0;font-size:9px}.ds-fulfillment:hover{background:#111c53}.ds-fulfillment:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Four-Tab Bottom Dock",
+      "kind": "nav",
+      "refersTo": "navigation-dock",
+      "description": "The Safari-safe persistent dock for Home, Menu, Orders, and Profile.",
+      "html": "<nav class=\"ds-dock\"><button class=\"ds-active\">⌂<span>Home</span></button><button>☰<span>Menu</span><i></i></button><button>▤<span>Orders</span></button><button>○<span>Profile</span></button></nav>",
+      "css": ".ds-dock{display:grid;grid-template-columns:repeat(4,1fr);width:390px;height:84px;padding:5px 0 14px;background:#fff;border-top:1px solid #e1dacb;box-shadow:0 -8px 22px rgba(17,28,83,.08);font-family:'DM Sans',Arial,sans-serif}.ds-dock button{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#74788d;background:transparent;border:0;font-size:20px;cursor:pointer}.ds-dock button span{font-size:10px}.ds-dock button.ds-active{color:#202978;font-weight:700}.ds-dock button.ds-active:after{content:'';width:20px;height:2px;background:#e7b827;border-radius:2px}.ds-dock button i{position:absolute;top:6px;right:calc(50% - 18px);width:7px;height:7px;background:#e7b827;border:2px solid #fff;border-radius:50%}.ds-dock button:hover{color:#202978}.ds-dock button:focus-visible{outline:3px solid #e7b827;outline-offset:-3px}"
+    },
+    {
+      "name": "Transactional Bottom Sheet",
+      "kind": "custom",
+      "description": "The shared cream shell for fulfillment, auth, cart, and other focused decisions.",
+      "html": "<section class=\"ds-sheet\"><button class=\"ds-sheet-close\" aria-label=\"Close\">×</button><span class=\"ds-sheet-mark\">KP</span><h2>Continue your Kopi Papa order</h2><p>Sign in for saved history, or continue as a guest.</p><button class=\"ds-sheet-primary\">Sign in</button><button class=\"ds-sheet-guest\">Continue as guest</button></section>",
+      "css": ".ds-sheet{position:relative;width:360px;padding:26px 20px 30px;color:#101a49;background:#f7f2e6;border-radius:20px 20px 0 0;box-shadow:0 -20px 50px rgba(7,12,42,.28);font-family:'DM Sans',Arial,sans-serif}.ds-sheet-close{position:absolute;top:14px;right:14px;width:40px;height:40px;color:#202978;background:#fff;border:1px solid #e1dacb;border-radius:50%;font-size:22px;cursor:pointer}.ds-sheet-mark{display:grid;place-items:center;width:50px;height:50px;color:#e7b827;background:#202978;border-radius:50%;font:400 18px 'Bree Serif',Georgia,serif}.ds-sheet h2{margin:12px 44px 6px 0;font:400 27px/1.13 'Bree Serif',Georgia,serif}.ds-sheet p{margin:0 42px 20px 0;color:#666b80;font-size:12px;line-height:1.5}.ds-sheet-primary,.ds-sheet-guest{width:100%;min-height:48px;border-radius:11px;font-weight:800;cursor:pointer}.ds-sheet-primary{color:#fff;background:#202978;border:0}.ds-sheet-guest{margin-top:10px;color:#202978;background:#fff;border:1px solid #202978}.ds-sheet button:hover{filter:brightness(.94)}.ds-sheet button:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Admin Rail",
+      "kind": "nav",
+      "refersTo": "admin-rail",
+      "description": "The fixed desktop operations rail with active and workload signals.",
+      "html": "<nav class=\"ds-admin-rail\"><div class=\"ds-admin-brand\">KP <strong>Kopi Papa</strong></div><button class=\"ds-admin-active\">▦ <span>Overview</span></button><button>▤ <span>Orders</span><b>4</b></button><button>☰ <span>Menu</span></button><button>◎ <span>Settings</span></button></nav>",
+      "css": ".ds-admin-rail{display:flex;flex-direction:column;gap:5px;width:250px;min-height:430px;padding:24px 16px;color:#fff;background:#111c53;font-family:'DM Sans',Arial,sans-serif}.ds-admin-brand{display:flex;align-items:center;gap:12px;margin:0 8px 24px;color:#e7b827;font:400 17px 'Bree Serif',Georgia,serif}.ds-admin-brand strong{font-size:19px}.ds-admin-rail button{position:relative;display:flex;align-items:center;gap:12px;width:100%;height:46px;padding:0 14px;color:#bec3e1;text-align:left;background:transparent;border:0;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer}.ds-admin-rail button:hover,.ds-admin-rail button.ds-admin-active{color:#fff;background:#202978}.ds-admin-rail button.ds-admin-active:after{content:'';position:absolute;right:12px;width:6px;height:6px;background:#e7b827;border-radius:50%}.ds-admin-rail button b{display:grid;place-items:center;width:22px;height:22px;margin-left:auto;color:#111c53;background:#e7b827;border-radius:50%;font-size:10px}.ds-admin-rail button:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Admin Metric Strip",
+      "kind": "card",
+      "description": "Four operational measures held in one flat divided container.",
+      "html": "<section class=\"ds-metrics\"><article><span>Net sales</span><strong>S$684.20</strong><small>↑ 12.4% from last Monday</small></article><article><span>Orders today</span><strong>86</strong><small>18 repeat customers</small></article><article><span>Current wait</span><strong>8 min</strong><small>Within target</small></article></section>",
+      "css": ".ds-metrics{display:grid;grid-template-columns:repeat(3,1fr);width:680px;color:#101a49;background:#fff;border:1px solid #dfd8ca;border-radius:14px;font-family:'DM Sans',Arial,sans-serif}.ds-metrics article{padding:21px;border-right:1px solid #dfd8ca}.ds-metrics article:last-child{border:0}.ds-metrics span,.ds-metrics strong,.ds-metrics small{display:block}.ds-metrics span{color:#686d82;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.ds-metrics strong{margin:8px 0 5px;font:400 27px 'Bree Serif',Georgia,serif}.ds-metrics small{color:#74798d;font-size:9px}"
+    },
+    {
+      "name": "Admin Status and Availability",
+      "kind": "custom",
+      "refersTo": "status-new",
+      "description": "Compact labeled operational state controls for orders and products.",
+      "html": "<div class=\"ds-states\"><span class=\"ds-status ds-new\">New</span><span class=\"ds-status ds-preparing\">Preparing</span><span class=\"ds-status ds-ready\">Ready</span><label class=\"ds-switch\"><input type=\"checkbox\" checked><i></i><span>Available</span></label></div>",
+      "css": ".ds-states{display:flex;align-items:center;gap:12px;color:#101a49;font-family:'DM Sans',Arial,sans-serif}.ds-status{padding:5px 8px;border-radius:999px;font-size:9px;font-weight:700}.ds-new{color:#775a11;background:#f6e8ae}.ds-preparing{color:#202978;background:#e1e4f4}.ds-ready{color:#246846;background:#dceee3}.ds-switch{display:flex;align-items:center;gap:8px}.ds-switch input{position:absolute;opacity:0}.ds-switch i{position:relative;width:34px;height:20px;background:#c9c8c5;border-radius:999px}.ds-switch i:after{content:'';position:absolute;top:3px;left:3px;width:14px;height:14px;background:#fff;border-radius:50%;transition:.2s}.ds-switch input:checked+i{background:#202978}.ds-switch input:checked+i:after{transform:translateX(14px)}.ds-switch span{font-size:9px}.ds-switch input:focus-visible+i{outline:3px solid #e7b827;outline-offset:3px}"
+    },
+    {
+      "name": "Admin Editor Modal",
+      "kind": "custom",
+      "description": "The centered cream editor for menu-item operations.",
+      "html": "<form class=\"ds-admin-modal\"><button class=\"ds-modal-close\" type=\"button\">×</button><h2>Edit menu item</h2><p>Changes remain in this session.</p><label>Product name<input value=\"Gula Melaka Latte\"></label><footer><button type=\"button\">Cancel</button><button type=\"submit\">Save item</button></footer></form>",
+      "css": ".ds-admin-modal{position:relative;width:440px;padding:28px;color:#101a49;background:#f7f2e6;border-radius:16px;box-shadow:0 22px 60px rgba(7,12,42,.3);font-family:'DM Sans',Arial,sans-serif}.ds-admin-modal h2{margin:0 0 5px;font:400 27px 'Bree Serif',Georgia,serif}.ds-admin-modal>p{margin:0 0 23px;color:#686d82;font-size:11px}.ds-admin-modal label{display:grid;gap:7px;font-size:12px;font-weight:700}.ds-admin-modal input{height:49px;padding:0 14px;color:#101a49;background:#fff;border:1px solid #d4cdbf;border-radius:10px;font:inherit}.ds-modal-close{position:absolute;top:18px;right:18px;width:35px;height:35px;color:#202978;background:#fff;border:1px solid #dfd8ca;border-radius:50%;font-size:20px}.ds-admin-modal footer{display:flex;justify-content:flex-end;gap:9px;margin-top:23px}.ds-admin-modal footer button{min-height:42px;padding:0 17px;color:#202978;background:#fff;border:1px solid #202978;border-radius:9px;font-weight:700}.ds-admin-modal footer button:last-child{color:#fff;background:#202978}.ds-admin-modal button:hover{filter:brightness(.94)}.ds-admin-modal button:focus-visible,.ds-admin-modal input:focus-visible{outline:3px solid #e7b827;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Papa Counter",
+    "overview": "Kopi Papa turns the familiar physical coffee counter into a Home-first mobile ordering surface. Deep navy provides the counter-like structure, gold behaves as a scarce service signal, and warm cream keeps browsing hospitable without drifting into generic beige coffee-commerce styling. The serif voice belongs to the brand and page headings; the sans serif voice handles every operational decision.\n\nThe Home surface welcomes first, then immediately resolves fulfillment before offering a photographic campaign carousel and four quick routes. Menu access is gated until pickup is selected; auth remains optional through a clear guest path. The system stays compact and precise through cart, orders, profile, and bottom-sheet flows, favoring persistent context and large reachable actions over ornamental discovery.\n\nThe admin workspace is the same counter seen from behind it. A private split-screen entry gives way to a fixed navy rail and cream operational canvas. Its metrics, tables, availability controls, campaign tools, settings, and editor are deliberately flatter and denser than the customer app, while the shared palette and typography make ownership unmistakable.",
+    "keyCharacteristics": ["Deep navy structural anchors with controlled gold signals.", "Warm cream context surfaces against crisp white menu rows.", "Bree Serif brand moments paired with dense, legible DM Sans utility copy.", "Persistent vertical categories and photographic product rows.", "A four-tab, safe-area-aware dock connecting Home, Menu, Orders, and Profile.", "Cream bottom sheets that handle fulfillment, auth, customization, and cart decisions.", "A fixed navy admin rail beside a calm cream workspace of flat operational rows.", "Supabase-controlled admin access, never a decorative client-only lock.", "Rounded controls and containers, with circles reserved for icons and compact actions."],
+    "rules": [
+      { "name": "The Gold Is a Signal Rule", "body": "Gold marks brand, price, live status, focus, or active state; it is never a broad background wash.", "section": "colors" },
+      { "name": "The Navy Owns Structure Rule", "body": "Major anchors and decisive actions use navy so the interface continues to feel like Kopi Papa, not a neutral marketplace.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Use Bree Serif for brand and menu hierarchy; use DM Sans for actions, prices, status, and supporting information.", "section": "typography" },
+      { "name": "The Context Stays Put Rule", "body": "The four primary destinations, pickup status, category navigation, and cart access remain visible or immediately reachable while content scrolls.", "section": "layout" },
+      { "name": "The Fulfillment Before Menu Rule", "body": "Entering Menu without a fulfillment choice opens the decision sheet; unavailable delivery is labeled as coming soon rather than behaving like a selectable path.", "section": "layout" },
+      { "name": "The Desktop Is the Counter Rule", "body": "Admin density assumes a desktop working surface first, then collapses the rail and preserves tables for smaller screens without changing operational meaning.", "section": "layout" },
+      { "name": "The Flat Menu Rule", "body": "Product browsing stays flat; elevation belongs to overlays, summaries, and floating actions.", "section": "elevation" }
+    ],
+    "dos": ["Do keep navy present in structural anchors and every decisive ordering action.", "Do reserve gold for meaningful signals: brand, live state, active state, focus, and price emphasis.", "Do use photographic rows, persistent category access, and compact metadata to support fast scanning.", "Do preserve large touch targets, visible keyboard focus, clear contrast, and reduced-motion behavior.", "Do keep operational facts such as shop, wait, price, and cart status unmistakable.", "Do gate Menu behind an explicit fulfillment choice and keep guest ordering visibly available.", "Do include bottom safe-area padding in the persistent dock and transactional sheets.", "Do keep admin tables flat, divider-led, and information-dense; reserve shadows for the shell boundary and editor modal.", "Do pair every admin status color or switch state with a readable label.", "Do enforce admin access with both Supabase authentication and the server-backed admin allowlist."],
+    "donts": ["Don't replace the identity with beige, brown, or lifestyle-led coffee-shop chrome.", "Don't turn every product into a floating card; the menu's precision depends on flat divided rows.", "Don't use Bree Serif for dense instructions, metadata, or controls.", "Don't flood surfaces with gold or use it as a decorative background.", "Don't copy CHAGEE or ZUS branding, campaign art, or visual identity; their references inform interaction structure only.", "Don't present Delivery as available until zones, addresses, and fees exist.", "Don't let campaign content or quick actions obscure the four primary destinations.", "Don't turn admin metrics or table rows into a mosaic of floating cards.", "Don't use customer-style promotional warmth where an admin task needs compact operational clarity.", "Don't treat a client-side route, hidden link, or development preview as an admin authorization boundary."]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "kopi-papa",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:customer": "pnpm --dir apps/order dev",
+    "dev:admin": "pnpm --dir apps/admin dev",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "oxlint": "^1.79.0",
+    "supabase": "^2.115.0",
+    "turbo": "^2.10.11",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.11"
+  }
+}
