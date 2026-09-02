@@ -4,8 +4,15 @@ export type Campaign = { id: number; title: string; body: string; image: string 
 export type WebsiteSection = { id:string; type:"hero"|"text_image"|"rich_text"|"call_to_action"|"product_catalog"|"store_list"; heading:string; body:string; imageUrl?:string; buttonLabel?:string; buttonUrl?:string; background?:"navy"|"cream"|"white"|"gold"; align?:"left"|"center"; imagePositionX?:number; imagePositionY?:number; imageHeight?:number };
 export type WebsitePage = { id:number; title:string; slug:string; routePath:string; seoTitle:string; seoDescription:string; sections:WebsiteSection[] };
 
-const url = process.env.VITE_SUPABASE_URL;
-const key = process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+// The publishable key is safe in website code; RLS remains the authorization boundary.
+// Environment variables take priority, while the project defaults prevent a Vercel
+// configuration omission from replacing the live catalog with demo products.
+const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  || process.env.VITE_SUPABASE_URL
+  || "https://qzgadlmlcsugwjshypwo.supabase.co";
+const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+  || process.env.VITE_SUPABASE_PUBLISHABLE_KEY
+  || "sb_publishable_bhJykqsIuUnMmPncVWnAUw_6P2WBoOM";
 
 async function rest<T>(table: string, params: Record<string, string>): Promise<T[]> {
   if (!url || !key) return [];
