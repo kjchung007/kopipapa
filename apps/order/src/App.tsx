@@ -2929,7 +2929,7 @@ function ProfilePage({
             <path d="m9 18 6-6-6-6" />
           </Icon>
         </a>
-        <a href="/about">
+        <a href={`${(import.meta.env.VITE_WEBSITE_URL as string | undefined)?.replace(/\/$/, "") || (import.meta.env.PROD ? "https://kopipapa.vercel.app" : "http://localhost:3000")}/story`}>
           <span>
             <Icon>
               <circle cx="12" cy="12" r="9" />

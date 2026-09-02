@@ -260,8 +260,10 @@ export function WebsiteEditor({ client, onExit }: { client: SupabaseClient; onEx
     width: device === "mobile" ? 390 : device === "tablet" ? 768 : "100%",
   }), [device]);
   const configuredWebsiteUrl = (import.meta.env.VITE_WEBSITE_URL as string | undefined)?.replace(/\/$/, "");
-  const localWebsiteUrl = `${window.location.protocol}//${window.location.hostname}:3000`;
-  const liveWebsiteUrl = `${configuredWebsiteUrl || localWebsiteUrl}${page?.route_path ?? "/"}`;
+  const fallbackWebsiteUrl = import.meta.env.PROD
+    ? "https://kopipapa.vercel.app"
+    : `${window.location.protocol}//${window.location.hostname}:3000`;
+  const liveWebsiteUrl = `${configuredWebsiteUrl || fallbackWebsiteUrl}${page?.route_path ?? "/"}`;
 
   function startEditing() {
     if (window.innerWidth < 1024) {

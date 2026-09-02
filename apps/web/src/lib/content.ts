@@ -64,5 +64,6 @@ export async function getPublishedPageByPath(routePath:string): Promise<WebsiteP
   return { id:row.id,title:row.title,slug:row.slug,routePath:row.route_path,seoTitle:row.seo_title,seoDescription:row.seo_description,sections:Array.isArray(row.published_content?.sections)?row.published_content.sections:[] };
 }
 
-export const orderUrl = process.env.NEXT_PUBLIC_ORDER_APP_URL || "http://localhost:5173";
+export const orderUrl = process.env.NEXT_PUBLIC_ORDER_APP_URL
+  || (process.env.NODE_ENV === "production" ? "https://kopipapa-order.vercel.app" : "http://localhost:5173");
 export const money = (cents:number) => `RM ${(cents / 100).toFixed(2)}`;

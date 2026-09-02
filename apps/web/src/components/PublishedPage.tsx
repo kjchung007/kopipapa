@@ -1,7 +1,11 @@
 import type { CSSProperties } from "react";
-import { getProducts, getStores, type WebsitePage, type WebsiteSection } from "@/lib/content";
+import { getProducts, getStores, orderUrl, type WebsitePage, type WebsiteSection } from "@/lib/content";
 
-const safeHref=(value?:string)=>value&&(value.startsWith("/")||value.startsWith("https://")||value.startsWith("http://localhost"))?value:"/";
+const safeHref=(value?:string)=>{
+  if (!value) return "/";
+  if (/^https?:\/\/(localhost|127\.0\.0\.1|192\.168\.)/i.test(value)) return orderUrl;
+  return value.startsWith("/") || value.startsWith("https://") ? value : "/";
+};
 async function PublishedSection({section}:{section:WebsiteSection}){
   if(section.type==="product_catalog"){
     const products=await getProducts();
